@@ -1,7 +1,13 @@
 
+<<<<<<< HEAD
 # 🚜 Basınç Düşüşü Uyarı Sistemi 
 
 ## PCB ile Koruma ve Uyarı Sistemi 
+=======
+# 🚜 Basınç Düşüşü Uyarı Sistemi Tasarımı
+
+## PCB ile Santrifüj Koruma ve Uyarı Sistemi 
+>>>>>>> 6a73c5a402d2e81f1217e4a9785c8820966e40d0
 
 ## ⚠️ Problem 
 
@@ -11,9 +17,15 @@
 
 ## 💡 Çözüm Yöntemi
 
+<<<<<<< HEAD
 * 📏 **Basınç sensörü**  ile sahadan elde edilen veri Mikrodenetleyiciye iletilecek.
 * 🧠 Mikrodenetleyici elde edilen veriyi işleyecek.
 * ⚠️  İstenmeyen bir veri olması durumunda sistemimiz motorun yakıtını keserek **durmasını sağlayacak**.
+=======
+* 📏 **Basınç sensörü**  ile sahadan elde edilen veri Mikrodenetleyiciye iletilecek 
+* 🧠 Mikrodenetleyici elde edilen veriyi işleyecek.
+* ⚠️  İstenmeyen bir veri olması durumunda sistem **otomatik olarak kapatılacak**
+>>>>>>> 6a73c5a402d2e81f1217e4a9785c8820966e40d0
 * 📶 Ardından **GSM modülü** **SMS ile** kullanıcıya haber verecek.
 * 🔩 Tüm bileşenler özel tasarımlı bir **PCB** üzerinde olacak ve gereken güç aküden sağlanacaktır.
 

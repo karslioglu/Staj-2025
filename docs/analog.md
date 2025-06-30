@@ -189,9 +189,10 @@ Sensör, ölçtüğü fiziksel değere karşılık gelen bir voltaj (0-5V) üret
 
 4-20mA iletişim protokolünde, 4mA ve 20mA değerleri, bir sensör tarafından ölçülen sıcaklık gibi değerleri kodlamak ve iletmek için kullanılan minimum ve maksimum akım akışını temsil eder.Sensör, ölçtüğü değere göre 4 mA ile 20 mA arasında bir akım gönderir.Alıcı cihaz bu akımı ölçer ve değere çevirir.
 Genelde 24V ile çalışır akımı voltaja dönüştürmek için direnç (ör. 250 Ohm) kullanılır.
+
 ÖRNEK:
 
-4 mA → 1V
+4 mA → 1V 
 
 20 mA → 5V
 

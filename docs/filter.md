@@ -56,80 +56,12 @@ Alçak geçiren filtre sadece sinyallerin kesme frekansı noktasının altından
 
 **Kesim Frekansı ($f_c$)**
 
-**Temel Formül**
-$$
-f_c = \frac{1}{2\pi RC}
-$$
-
-**Açısal Frekans ($\omega_c$)**
-$$
-\omega_c = \frac{1}{RC} \quad \text{(rad/s)}
-$$
-
----
-
-**Fazör Analizi** 
 
 
-
- Direnç ($R$)
-$$
-Z_R = R \quad \text{(Reel)}
-$$
-
-Kapasitör ($C$)
-$$
-Z_C = \frac{1}{j\omega C} = -j\frac{1}{\omega C} \quad \text{(İmajiner)}
-$$
-
-**Çıkış Gerilimi ($V_{out}$)**
-
-**Temel Formül**
-$$
-V_{out} = V_{in} \cdot \frac{Z_C}{Z_R + Z_C} = V_{in} \cdot \frac{1}{1 + j\omega RC}
-$$
-
-**Alternatif Gösterimler**
-1. **Genlik ve Faz Ayrışımı**:
-   $$
-   V_{out} = \underbrace{\frac{|V_{in}|}{\sqrt{1 + (\omega RC)^2}}}_{\text{Genlik}} \cdot \underbrace{e^{-j\tan^{-1}(\omega RC)}}_{\text{Faz}}
-   $$
-
-2. **Reel-İmajiner Ayrıştırma**:
-   $$
-   V_{out} = V_{in} \cdot \frac{1 - j\omega RC}{1 + (\omega RC)^2}
-   $$
-
-3. **Kutupsal Form**:
-   $$
-   |V_{out}| = \frac{|V_{in}|}{\sqrt{1 + (\omega RC)^2}}, \quad \theta = -\tan^{-1}(\omega RC)
-   $$
-
-**Örnek Hesaplama**
-
-$\omega = 1000 \text{ rad/s}$, $R = 1 \text{k}\Omega$, $C = 1 \mu\text{F}$ için:
-$$
-V_{out} = V_{in} \cdot \frac{1}{1 + j(1000)(1000)(10^{-6})} = \frac{V_{in}}{1 + j1}
-$$
-
-**Frekans Yanıtı**
-
-- **Alçak Frekans ($\omega \ll \frac{1}{RC}$)**:
-  $$
-  V_{out} \approx V_{in} \quad \text{(Filtre geçirgen)}
-  $$
-  
-- **Kesim Frekansı ($\omega = \frac{1}{RC}$)**:
-  $$
-  |V_{out}| = \frac{|V_{in}|}{\sqrt{2}}
-  $$
-
-- **Yüksek Frekans ($\omega \gg \frac{1}{RC}$)**:
-  $$
-  V_{out} \approx 0 \quad \text{(Filtre bloke)}
-  $$
+($f_c$)=1/2πRC
 
 
+ 
 ---
 
 **Pasif Yüksek Geçiren Filtre**
@@ -146,11 +78,11 @@ Adından da anlaşılacağı gibi pasif yüksek geçiren filtre devresi, sadece 
 ---
 
 
-Bu devre düzenlemesinde, kondansatörün reaktansı düşük frekanslarda çok yüksektir. Bu nedenle kondansatör açık devre gibi davranır ve kesme frekansı noktasına ( ƒC ) ulaşılana kadar Vin’deki herhangi bir giriş sinyalini bloke eder. ƒc yine aynı şekilde elde ediliyor; 
+Bu devre düzenlemesinde, kondansatörün reaktansı düşük frekanslarda çok yüksektir. Bu nedenle kondansatör açık devre gibi davranır ve kesme frekansı noktasına ( ƒC ) ulaşılana kadar Vin’deki herhangi bir giriş sinyalini bloke eder. ƒc yine aynı şekilde elde edilir; 
 
 
 $$
-f_c = \frac{1}{2\pi RC}
+f_c =1/2πRC
 $$    
 
 
@@ -176,40 +108,21 @@ Frekans yanıtı tipik olarak **çan eğrisi (bell-shaped)** formundadır ve iki
  
 - **Alt Kesim Frekansı (fₗ):**
   $$
-  f_L = \frac{1}{2\pi R_1 C_1}
+  f_L = 1/2πR1C1
   $$
   
 - **Üst Kesim Frekansı (fₕ):**
   $$
-  f_H = \frac{1}{2\pi R_2 C_2}
+  f_H =1/2πR2C2
   $$
 
-**Orta Frekans (f₀)**
+**Orta Frekans (f₀)** f₀ = √(fL ⋅ fH)
 
-$$
-f_0 = \sqrt{f_L \cdot f_H}
-$$
+ **Band Genişliği (B)** B = fH − fL    (Hz)
 
-
- **Band Genişliği (B)**
-$$
-B = f_H - f_L \quad \text{(Hz)}
-$$
+ **Q (kalite faktörü)**:  Q = f₀ / B
 
 
-
- **Q (kalite faktörü)**:
-$$
-Q = \frac{f_0}{B}
-$$
-
-**Örnek Değerler**
-| Parametre | Formül | Örnek Değer (R=1kΩ, C=1μF) |
-|-----------|--------|-----------------------------|
-| $f_L$     | $\frac{1}{2\pi R C}$ | 159.15 Hz |
-| $f_H$     | $\frac{1}{2\pi R C}$ | 15.915 kHz |
-| $B$       | $f_H - f_L$         | 15.756 kHz |
-| $f_0$     | $\sqrt{f_L f_H}$    | 1.592 kHz |
 
 ---
 
@@ -224,17 +137,10 @@ Frekans yanıtı tipik olarak **ters çan eğrisi** formundadır.
 
 
 
-**Orta Frekans (f₀)**
+**Orta Frekans (f₀)** f₀ = √(fL ⋅ fH)
 
-$$
-f_0 = \sqrt{f_L \cdot f_H}
-$$
+ **Band Genişliği (B)** B = fH − fL    (Hz)
 
-
- **Band Genişliği (B)**
-$$
-B = f_H - f_L \quad \text{(Hz)}
-$$
 
 ---
 

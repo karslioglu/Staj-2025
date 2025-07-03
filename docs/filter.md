@@ -107,14 +107,14 @@ Frekans yanıtı tipik olarak **çan eğrisi (bell-shaped)** formundadır ve iki
 
  
 - **Alt Kesim Frekansı (fₗ):**
-  $$
-  f_L = 1/2πR1C1
-  $$
+  
+  fL = 1/2πR1C1
+  
   
 - **Üst Kesim Frekansı (fₕ):**
-  $$
-  f_H =1/2πR2C2
-  $$
+ 
+  fH =1/2πR2C2
+ 
 
 **Orta Frekans (f₀)** f₀ = √(fL ⋅ fH)
 

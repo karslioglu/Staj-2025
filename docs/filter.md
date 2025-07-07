@@ -61,7 +61,6 @@ Alçak geçiren filtre sadece sinyallerin kesme frekansı noktasının altından
 ($f_c$)=1/2πRC
 
 
- 
 ---
 
 **Pasif Yüksek Geçiren Filtre**
